@@ -1,0 +1,52 @@
+.add-category-card {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    background-color: #ffffff;
+  }
+  
+  .add-category-card h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .custom-input input {
+    color: #000; /* Dark text color */
+    }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .add-category-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .add-button:hover {
+    background-color: #1565c0;
+  }
+  
+  .bootstrap-wrapper {
+    padding: 10px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+
+  .custom-description textarea {
+    color: black; /* Ensures the text inside the textarea is black */
+  }
+  

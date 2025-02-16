@@ -1,0 +1,84 @@
+.profile-card {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .profile-header {
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #4caf50;
+    margin-bottom: 10px;
+  }
+  
+  .profile-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .profile-details {
+    margin: 20px 0;
+  }
+  
+  .profile-table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  .profile-table tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .profile-table .label {
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+    padding: 10px;
+  }
+  
+  .profile-table .value {
+    text-align: right;
+    color: #333;
+    padding: 10px;
+  }
+  
+  .profile-actions {
+    margin-top: 20px;
+  }
+  
+  .action-button {
+    margin: 0 10px;
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  
+  /* .action-button:first-child {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .action-button:first-child:hover {
+    background-color: #45a049;
+  }
+  
+  .action-button:last-child {
+    background-color: #ff5722;
+    color: white;
+  }
+  
+  .action-button:last-child:hover {
+    background-color: #e64a19;
+  } */
+  

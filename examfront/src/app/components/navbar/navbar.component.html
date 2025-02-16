@@ -1,0 +1,13 @@
+<mat-toolbar class="li">
+  <a routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </a>
+  <span class="ml20">QuizNest</span>
+  <span class="example-spacer"></span>
+  
+  <!-- Show only after determining the loading state -->
+    <a *ngIf="!isLoggedIn" routerLink="/login" mat-raised-button>Login</a>
+    <a *ngIf="!isLoggedIn" [routerLink]="'/register'" mat-raised-button color="accent" class="ml20">Register</a>
+    <a *ngIf="isLoggedIn && user" mat-raised-button class="ml20">{{login.getUser().username}}</a>
+    <a (click)="logout()" *ngIf="isLoggedIn" mat-raised-button class="ml20">Logout</a>
+</mat-toolbar>

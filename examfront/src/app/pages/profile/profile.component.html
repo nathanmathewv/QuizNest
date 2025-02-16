@@ -1,0 +1,55 @@
+<mat-card *ngIf="user" class="profile-card">
+    <h1 class="profile-header">Your Profile Details</h1>
+    <mat-card-content>
+      <div class="profile-container">
+        <!-- Profile Image and Name -->
+        <div class="profile-header">
+          <img
+            src="https://t4.ftcdn.net/jpg/03/46/93/61/360_F_346936114_RaxE6OQogebgAWTalE1myseY1Hbb5qPM.jpg"
+            alt="Profile Image"
+            class="profile-image"
+          />
+          <h2 class="profile-name">
+            {{ user.firstName }} {{ user.lastName }}
+          </h2>
+        </div>
+  
+        <!-- User Details Table -->
+        <div class="profile-details">
+          <table class="profile-table">
+            <tr>
+              <td class="label">Username</td>
+              <td class="value">{{ user.username }}</td>
+            </tr>
+            <tr>
+              <td class="label">User ID</td>
+              <td class="value">EXAM{{ user.id }}</td>
+            </tr>
+            <tr>
+              <td class="label">Phone</td>
+              <td class="value">{{ user.number }}</td>
+            </tr>
+            <tr>
+              <td class="label">Role</td>
+              <td class="value">{{ user.authorities[0].authority }}</td>
+            </tr>
+            <tr>
+              <td class="label">Status</td>
+              <td class="value">
+                {{ user.enabled ? "ACTIVE" : "NOT ACTIVE" }}
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </mat-card-content>
+    <!-- Actions -->
+    <mat-card-actions class="profile-actions">
+      <button mat-raised-button color="primary" class="action-button">
+        UPDATE
+      </button>
+      <button mat-raised-button color="accent" class="action-button">
+        SHARE
+      </button>
+    </mat-card-actions>
+  </mat-card>  

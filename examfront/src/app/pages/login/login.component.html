@@ -1,0 +1,37 @@
+<div class="bootstrap-wrapper" style="background-image: url(/bg.jpg); padding-top: 64px; background-size: cover; min-height: 100vh; display: flex; justify-content: center; align-items: center;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 offset-md-3">
+                <!-- Form Container with Background and Rounded Borders -->
+                <div class="form-container" style="background-color: white; border-radius: 15px; padding: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <!-- Logo -->
+                    <div class="container text-center">
+                        <img src="qn.png" alt="QuizNest" style="width: 100px; height: auto;">
+                    </div>
+                    <!-- Title -->
+                    <h3 class="text-center" style="margin-bottom: 20px;">Login</h3>
+                    <!-- <div>{{loginData | json}}</div> -->
+                    <!-- Form -->
+                    <form (ngSubmit)="formSubmit()">
+                        <!-- Username field -->
+                        <mat-form-field style="margin-top: -10px" class="full-width custom-input" appearance="outline">
+                            <mat-label>Username</mat-label>
+                            <input [(ngModel)]="loginData.username" required name="username" matInput placeholder="Enter here" />
+                            <mat-hint>Enter a valid username</mat-hint>
+                        </mat-form-field>
+                        <!-- Password field -->
+                        <mat-form-field class="full-width custom-input" appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input [(ngModel)]="loginData.password" required name="password" type="password" matInput placeholder="Enter here" />
+                        </mat-form-field>
+                        <!-- Buttons -->
+                        <div class="container text-center" style="margin-top: 20px;">
+                            <button type="submit" style="margin-right: 30px;" mat-raised-button color="primary">Login</button>
+                            <button style="margin-right: 20px;" mat-raised-button color="accent">Clear</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
