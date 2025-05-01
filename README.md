@@ -2,7 +2,7 @@
 
 QuizNest is a full-stack quiz application designed to facilitate the creation, management, and participation in quizzes. It comprises a robust backend built with Java and Spring Boot and a dynamic frontend developed using Angular, along with a database managed by PostgreSQL
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 QuizNest/
