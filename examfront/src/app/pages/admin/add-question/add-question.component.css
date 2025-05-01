@@ -1,0 +1,79 @@
+/* Card Styling */
+mat-card {
+    background: white; /* White background */
+    color: black; /* Black text */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card Header */
+  mat-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  mat-card-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Input Fields */
+  mat-form-field {
+    width: 100%;
+  }
+  
+  mat-label {
+    color: black !important;
+  }
+
+  mat-card-subtitle {
+    color: black !important;
+  }
+
+  
+  /* Dropdown (mat-select) Styling */
+  mat-select {
+    background: white !important;
+    color: black !important;
+  }
+  
+  /* Grid Layout for Inputs */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .col-md-6 {
+    flex: 1;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #ff914d !important;
+    color: white !important;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #ff7f3b !important;
+  }
+
+  .custom-input input {
+    color: #000; /* Dark text color */
+  }
+  
+  .custom-description textarea {
+    color: black; /* Ensures the text inside the textarea is black */
+  }

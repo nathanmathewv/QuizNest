@@ -1,0 +1,56 @@
+mat-card {
+    background-color: white !important;
+    color: #333;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  mat-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222;
+  }
+
+  mat-card-subtitle {
+    color: #555;
+    font-size: 1rem;
+  }
+
+  h1 {
+    color: #111;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+
+  ul {
+    color: #444;
+    line-height: 1.7;
+  }
+
+  mat-divider {
+    margin: 1rem 0;
+  }
+
+  mat-card-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* adds spacing between buttons */
+  }
+
+  button[mat-raised-button] {
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 6px;
+  }
+
+  .bootstrap-wrapper {
+    padding: 0 15px;
+  }
+
+  mat-card-content {
+    padding-bottom: 1.5rem;
+  }

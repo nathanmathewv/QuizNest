@@ -1,0 +1,10 @@
+.full-width {
+    width: 100%;
+}
+.custom-input input {
+    color: #000; /* Dark text color */
+}
+
+.li {
+    margin-top : 64px;
+}

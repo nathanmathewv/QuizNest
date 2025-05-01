@@ -1,0 +1,43 @@
+<div class="quiz-container">
+    <!-- Quiz Card -->
+    <div class="quiz-card" *ngFor="let q of quizzes">
+      <div class="quiz-header">
+        <div class="quiz-header-image"></div>
+        <div class="quiz-header-details">
+          <div class="title-category">
+            <h3>{{ q?.title }}</h3>
+            <h5>{{ q?.category.title }}</h5>
+          </div>
+          <p class="quiz-description">{{ q.description }}</p>
+        </div>
+      </div>
+  
+      <div class="quiz-actions">
+        <button mat-raised-button [routerLink]="'/admin/view-questions/' + q.qid + '/' + q.title">
+          Questions
+        </button>
+        <button mat-stroked-button class="accent disable-click">
+          Max Marks: {{ q.maxMarks }}
+        </button>
+        <button mat-stroked-button class="accent disable-click">
+          Questions: {{ q.numberOfQuestions }}
+        </button>
+        <button mat-raised-button [routerLink]="'/admin/quiz/' + q.qid" class="primary">
+          Update
+        </button>
+        <button mat-raised-button>
+          Attempts
+        </button>
+        <button mat-raised-button color="accent" (click)="deleteQuiz(q.qid)">
+          Delete
+        </button>
+      </div>
+    </div>
+  
+    <!-- Add New Quiz Button -->
+    <div class="add-quiz-container">
+      <button mat-raised-button color="accent" routerLink="/admin/add-quiz">
+        Add New Quiz
+      </button>
+    </div>
+  </div>  

@@ -1,0 +1,82 @@
+<mat-card class="quiz-card">
+    <h1>Update Quiz</h1>
+    <form *ngIf="quiz" (ngSubmit)="updateData()" class="quiz-form">
+      <!-- Title Field -->
+      <mat-form-field appearance="outline" class="full-width custom-input">
+        <mat-label>Enter Title</mat-label>
+        <input
+          [(ngModel)]="quiz.title"
+          type="text"
+          name="title"
+          placeholder="Enter Title*"
+          matInput
+          required
+        />
+      </mat-form-field>
+  
+      <!-- Description Field -->
+      <mat-form-field appearance="outline" class="full-width custom-description">
+        <mat-label>Enter Description</mat-label>
+        <textarea
+          [(ngModel)]="quiz.description"
+          name="description"
+          placeholder="Enter Description"
+          matInput
+          rows="5"
+        ></textarea>
+      </mat-form-field>
+  
+      <!-- Maximum Marks Field -->
+      <mat-form-field appearance="outline" class="full-width custom-input">
+        <mat-label>Maximum Marks</mat-label>
+        <input
+          [(ngModel)]="quiz.maxMarks"
+          type="number"
+          name="maxMarks"
+          placeholder="Enter Maximum Marks"
+          matInput
+        />
+      </mat-form-field>
+  
+      <!-- Number of Questions Field -->
+      <mat-form-field appearance="outline" class="full-width custom-input">
+        <mat-label>Number of Questions</mat-label>
+        <input
+          [(ngModel)]="quiz.numberOfQuestions"
+          type="number"
+          name="numberOfQuestions"
+          placeholder="Enter Number of Questions"
+          matInput
+        />
+      </mat-form-field>
+  
+      <!-- Publish Status Toggle -->
+      <mat-slide-toggle name="active" [(ngModel)]="quiz.active" class="mt-3">
+        Publish Status
+      </mat-slide-toggle>
+  
+      <!-- Categories Field using Autocomplete -->
+      <mat-form-field appearance="outline" class="full-width custom-input">
+        <mat-label>Categories</mat-label>
+        <input
+          type="text"
+          matInput
+          [matAutocomplete]="auto"
+          placeholder="Select category"
+          [(ngModel)]="quiz.category.cid"
+          name="category"
+        />
+        <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayCategory">
+          <mat-option *ngFor="let category of categories" [value]="category.cid">
+            {{ category.title }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+  
+      <!-- Update Button -->
+      <div class="text-center mt-3">
+        <button mat-raised-button color="accent" type="submit">Update</button>
+      </div>
+    </form>
+  </mat-card>
+  

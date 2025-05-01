@@ -1,0 +1,42 @@
+.sidebar {
+    position: fixed;
+    top: 64px; /*Offset by the height of the navbar */
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 64px); /*Adjust height to fit below the navbar*/
+    background-color: #222; /* Dark background */
+    color: white; /* Text color */
+    border-radius: 0; /* Remove mat-card's rounded edges */
+    padding-top: 20px;
+    overflow: auto; /* Scrollable if the content overflows */
+    z-index: 1; /* Ensure it doesn't overlap other elements unnecessarily */
+  }
+  
+  .menu-header {
+    color: white; /* Make 'Menu' text white */
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  mat-icon {
+    margin-right: 10px; /* Spacing between icon and text */
+    vertical-align: middle; /* Align icon vertically with text */
+  }
+  
+  mat-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+  }
+  
+  mat-list-item:hover {
+    background-color: #333; /* Highlight on hover */
+    border-radius: 5px; /* Slight rounding for hover effect */
+  }
+  
+  mat-card {
+    box-shadow: none; /* Remove mat-card shadow */
+  }
+  

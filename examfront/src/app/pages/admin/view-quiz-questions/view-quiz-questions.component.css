@@ -1,0 +1,59 @@
+/* Utility classes */
+.mt20 {
+    margin-top: 20px;
+  }
+  .ml20 {
+    margin-left: 20px;
+  }
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Wrapper for overall page content */
+  .bootstrap-wrapper {
+    padding: 20px;
+  }
+  
+  /* Custom styling for each question card */
+  .question-card {
+    background-color: #ffffff;  /* White background for clarity */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  
+  /* Header style for each question */
+  .question-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Options styling */
+  .question-options p {
+    margin: 0;
+    padding: 4px 0;
+    font-size: 16px;
+  }
+  
+  /* Correct answer style */
+  .question-answer {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Card actions styling: align buttons to the right with spacing */
+  .mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Styling for the "Add Question" button */
+  .add-question-btn {
+    margin-bottom: 20px;
+  }
+  

@@ -1,0 +1,51 @@
+.w100 {
+    width: 100%;
+  }
+
+  .quiz-card {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .quiz-card h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .quiz-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .mt-3 {
+    margin-top: 15px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  mat-form-field {
+    display: block;
+  }
+  
+  .custom-input input {
+    color: #000; /* Dark text color */
+  }
+  
+  .custom-description textarea {
+    color: black; /* Ensures the text inside the textarea is black */
+  }
+  
+  mat-label {
+    color: black !important;
+  }

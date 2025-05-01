@@ -1,0 +1,34 @@
+<mat-card class="categories-card" *ngIf="!loading; else loadingTemplate">
+  <h1 class="text-center">All Categories</h1>
+  <mat-divider></mat-divider>
+
+  <mat-list>
+    <mat-list-item *ngFor="let c of categories" class="category-item">
+      <div class="category-content">
+        <mat-icon mat-list-icon class="mr20">category</mat-icon>
+        <span class="category-title">{{ c.title }}</span>
+        <span class="category-description">{{ c.description }}</span>
+      </div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list>
+
+  <div class="text-center mt20">
+    <button
+      routerLink="/admin/add-category"
+      mat-raised-button
+      color="accent"
+      class="add-category-button"
+    >
+      Add New Category
+    </button>
+  </div>
+</mat-card>
+
+<!-- Loading Spinner -->
+<ng-template #loadingTemplate>
+  <div class="loading-container">
+    <mat-spinner color="primary"></mat-spinner>
+    <p>Loading categories...</p>
+  </div>
+</ng-template>
