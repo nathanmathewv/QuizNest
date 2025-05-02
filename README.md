@@ -60,7 +60,7 @@ QuizNest/
 
 2. **Configure the database:**
 
-   - Create a PostgreSQL database named `quiznest`.
+   - Create a PostgreSQL database named `exam`.
    - Update the `application.properties` file with your PostgreSQL credentials.
 
 3. **Build and run the application:**
