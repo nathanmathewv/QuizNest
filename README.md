@@ -30,15 +30,13 @@ QuizNest/
 - **Spring Boot**
 - **Spring Security**
 - **JWT (JSON Web Tokens)**
-- **MySQL**
+- **PostgreSQL**
 - **Hibernate/JPA**
 
 ### Frontend (`examfront`)
 
 - **Angular 15**
 - **TypeScript**
-- **RxJS**
-- **Bootstrap**
 
 ---
 
